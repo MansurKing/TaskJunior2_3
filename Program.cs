@@ -6,11 +6,13 @@ namespace TaskJunior2._3
     {
         static void Main(string[] args)
         {
-            int setValues;
+            int firstValue = 5;
+            int finishValue = 104;
+            int breakingValue = 7;
 
-            for (setValues = 5; setValues < 104; setValues += 7)
+            for (int i = firstValue; i < finishValue; i += breakingValue)
             {
-                Console.WriteLine(setValues);
+                Console.WriteLine(i);
             }
             /// Учитывая тот факт что у нас имеется заданные (конкретные) значения начало (5)
             /// и конец (103), а также промежутки (7), поэтому мы выбрали цикл с параметром (for).
